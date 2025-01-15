@@ -157,7 +157,8 @@ li.spacer {
     height: 40%;
     margin: 30px;
     margin-top: -1px;
-    box-shadow: inset 5px -5px gold
+    box-shadow: inset 5px -5px gold;
+
 }
 
 .card > p + p {
@@ -180,6 +181,9 @@ li.spacer {
     margin-left: 30px;
     margin-bottom: 5px
 }
+.announce {
+    margin-left: 15px
+}
 
 .content-right {
     grid-column: 3/4;
@@ -188,7 +192,7 @@ li.spacer {
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     color: black;
-    
+    margin-right: 20px;
 }
 
 .announcements {
@@ -196,15 +200,30 @@ li.spacer {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.text > p {
+.text > p + p {
     color: #636363;
-    font-size: 0.4rem
+    font-size: 0.8rem
 }
 
 .trending {
     background-color: white;
-    grid-row: 2/3
+    grid-row: 2/3;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 20px;
+}
+
+.friend {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px
+}
+.friend-user > p + p {
+    color: #878787
 }
